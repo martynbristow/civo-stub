@@ -1,0 +1,118 @@
+{
+    "page": 1,
+    "per_page": null,
+    "pages": 1,
+    "items": [
+        {
+            "id": "69a23478-a89e-41d2-97b1-6f4c341cee70",
+            "name": "your-cluster-name",
+            "generated_name": "your-cluster-name-8950c21f",
+            "version": "1.20.0-k3s2",
+            "kubernetes_version": "1.20.0-k3s2",
+            "status": "ACTIVE",
+            "ready": true,
+            "num_target_nodes": 3,
+            "target_nodes_size": "g3.xsmall",
+            "built_at": "2021-02-27T02:46:57.563+00:00",
+            "kubeconfig": "KUBE_CONFIG",
+            "api_endpoint": "https://1.2.3.4:6443",
+            "dns_entry": "69a23478-a89e-41d2-97b1-6f4c341cee70.k8s.civo.com",
+            "tags": [],
+            "created_at": "2021-02-27T02:44:03.000+00:00",
+            "upgrade_available_to": null,
+            "master_ip": "212.2.242.235",
+            "instances": [
+                {
+                    "id": "a916b10f-48d1-41d3-a53c-dbf388e8bcdb",
+                    "name": "master-836c",
+                    "hostname": "master-836c",
+                    "account_id": "f5a8f98c-c5db-4519-6b47-06615408e191",
+                    "size": "g3.xsmall",
+                    "firewall_id": "46130ea4-eb7e-4d6d-9b26-d2b53936bd4e",
+                    "source_type": "diskimage",
+                    "source_id": "1.20.0-k3s2",
+                    "initial_user": "root",
+                    "initial_password": "$rX9jGipBrUir1PWBsc6",
+                    "ssh_key": "-",
+                    "ssh_key_id": null,
+                    "tags": [
+                        "k3s"
+                    ],
+                    "user_script": "",
+                    "status": "ACTIVE",
+                    "public_ip": "212.2.242.235",
+                    "private_ip": "192.168.1.2",
+                    "ipv6": null,
+                    "namespace_id": null,
+                    "notes": null,
+                    "reverse_dns": null,
+                    "cpu_cores": 1,
+                    "ram_mb": 1024,
+                    "disk_gb": 25
+                },
+                {
+                    "id": "01a5f8d5-13bf-433f-a7ed-0be919f84999",
+                    "name": "node-5383",
+                    "hostname": "node-5383",
+                    "account_id": "f5a8f98c-c5db-4519-6b47-06615408e191",
+                    "size": "g3.xsmall",
+                    "firewall_id": "",
+                    "source_type": "diskimage",
+                    "source_id": "1.20.0-k3s2",
+                    "initial_user": "root",
+                    "initial_password": "s*$kFFDOsQYKBCj2U1P3",
+                    "ssh_key": "-",
+                    "ssh_key_id": null,
+                    "tags": [
+                        "k3s"
+                    ],
+                    "user_script": "",
+                    "status": "ACTIVE",
+                    "public_ip": null,
+                    "private_ip": "192.168.1.3",
+                    "ipv6": null,
+                    "namespace_id": null,
+                    "notes": null,
+                    "reverse_dns": null,
+                    "cpu_cores": 1,
+                    "ram_mb": 1024,
+                    "disk_gb": 25
+                },
+                {
+                    "id": "ee836ce7-6ad1-42ed-8832-1b38b94902f7",
+                    "name": "node-ffaa",
+                    "hostname": "node-ffaa",
+                    "account_id": "f5a8f98c-c5db-4519-6b47-06615408e191",
+                    "size": "g3.xsmall",
+                    "firewall_id": "",
+                    "source_type": "diskimage",
+                    "source_id": "1.20.0-k3s2",
+                    "initial_user": "root",
+                    "initial_password": "TcWPO@WaoFq3Pcbs2flA",
+                    "ssh_key": "-",
+                    "ssh_key_id": null,
+                    "tags": [
+                        "k3s"
+                    ],
+                    "user_script": "",
+                    "status": "ACTIVE",
+                    "public_ip": null,
+                    "private_ip": "192.168.1.4",
+                    "ipv6": null,
+                    "namespace_id": null,
+                    "notes": null,
+                    "reverse_dns": null,
+                    "cpu_cores": 1,
+                    "ram_mb": 1024,
+                    "disk_gb": 25
+                }
+            ],
+            "installed_applications": [],
+            "master_ids": [
+                "a916b10f-48d1-41d3-a53c-dbf388e8bcdb"
+            ],
+            "network_id": "85a6db60-9b57-4bb3-9ab4-17334e3e0249",
+            "namespace": "cust-f5a8f98c-61c9-public"
+        }
+    ]
+}

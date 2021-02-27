@@ -1,0 +1,28 @@
+[
+		{
+			"code": "NYC1",
+			"name": "New York 1",
+			"type": "civostack",
+			"default": true,
+			"out_of_capacity": false,
+			"country": "us",
+			"country_name": "United States",
+			"features": {
+				"iaas": false,
+				"kubernetes": true
+			}
+		},
+		{
+			"code": "SVG1",
+			"name": "Stevenage 1",
+			"type": "openstack",
+			"default": null,
+			"out_of_capacity": true,
+			"country": "uk",
+			"country_name": "United Kingdom",
+			"features": {
+				"iaas": true,
+				"kubernetes": true
+			}
+		}
+	]
