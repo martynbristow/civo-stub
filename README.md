@@ -13,3 +13,9 @@ Requirements: `pip install -r requirements.txt`
 The stub is a simple flask app.
 
 Deploy: `python app.py`
+
+### Test API Clients
+
+GO Cli: Update your `.civo.json`, setting url to `localhost:5000`
+
+Python API: 

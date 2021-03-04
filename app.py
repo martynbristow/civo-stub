@@ -46,13 +46,18 @@ def responses():
             in os.listdir(os.path.join(base_path, 'responses'))
             if '.' in item and '_' in item
             ]
-    return [(item[0][0].upper(), item[0][1], f'{request.base_url}{item[0][1]}', item[1])
+    return [(item[0][0].upper(),
+             item[0][1],
+             f'{request.base_url}{item[0][1]}',
+             item[1])
             for item in data]
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', data=responses(), title="CIVO API Stub")
+    return render_template('index.html',
+                           data=responses(),
+                           title="CIVO API Stub")
 
 
 @app.route('/v2')
