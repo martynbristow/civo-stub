@@ -72,6 +72,15 @@ def show_response(filename):
     return jsonify(load_json(os.path.join(base_path, 'responses', filename)))
 
 
+@app.route('/v2/instances')
+def list_instances():
+    return jsonify(load_response_json('get', 'instances'))
+
+
+@app.route('/v2/kubernetes/marketplace')
+def list_k8s():
+    return jsonify(load_response_json('get', 'apps'))
+
 @app.route('/v2/kubernetes/clusters')
 def list_k8s():
     return jsonify(load_response_json('get', 'clusters'))
