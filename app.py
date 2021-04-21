@@ -77,9 +77,10 @@ def list_instances():
     return jsonify(load_response_json('get', 'instances'))
 
 
-@app.route('/v2/kubernetes/marketplace')
-def list_k8s():
+@app.route('/v2/kubernetes/applications')
+def list_k8s_apps():
     return jsonify(load_response_json('get', 'apps'))
+
 
 @app.route('/v2/kubernetes/clusters')
 def list_k8s():
